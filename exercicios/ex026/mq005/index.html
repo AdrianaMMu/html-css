@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Media Query</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header>
+        <h1>Teste Mobile First</h1>
+        <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li> <a href="#">Home</a></li>
+                <li> <a href="#">Notícias</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Quem Somos</a></li>
+                <li><a href="#">Fale Conosco</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eveniet culpa perspiciatis dolore magnam maxime velit, eius temporibus, qui maiores quisquam veritatis sunt vero debitis dignissimos amet necessitatibus veniam recusandae.lorem.lorem</p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus aliquam magni, voluptatem rerum, nemo eaque doloribus perferendis ad sit nam quaerat pariatur architecto tenetur vitae, obcaecati id inventore mollitia fugiat.<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita similique enim voluptates nisi dolore facere id, dignissimos amet? Labore dolor quos numquam nisi blanditiis quae assumenda consectetur saepe quis totam.</p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum in quaerat quisquam numquam accusantium quas placeat exercitationem at vero unde officiis, culpa ullam ratione facere doloribus odit. Quod, est impedit.<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quos placeat repudiandae exercitationem fugit, in earum asperiores nam sint mollitia odit sapiente labore. Totam aspernatur commodi nulla quasi, asperiores officia?</p>
+        </article>
+    </main>
+   <script>
+        function clickMenu() {
+            if(itens.style.display == 'block')
+        {
+            itens.style.display = 'none'
+        } else {
+            itens.style.display = 'block'
+        }
+        }
+   </script> 
+</body>
+</html>
