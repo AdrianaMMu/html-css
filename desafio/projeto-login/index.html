@@ -1,24 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google Fonts: Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <!-- Estilos externos -->
     <link rel="stylesheet" href="./estilos/style.css">
+    <link rel="stylesheet" href="./estilos/media-query.css">
+    
     <title>Login</title>
 </head>
 <body>
     <main>
-            <section id="login">
-                <div id="imagem">
+        <section id="login">
+            <!-- Área da imagem -->
+            <div id="imagem">
+                <!-- Imagem decorativa vai pelo CSS ou por tag img -->
+            </div>
 
-                </div>
-                <div id="formulario">
-                    <h1>Login</h1>
-                    <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
-                    <form action="login.pho" method="post"></form>
-                </div>
-            </section>
+            <!-- Área do formulário -->
+            <div id="formulario">
+                <h1>Login</h1>
+                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+                
+                <form action="login.php" method="post" autocomplete="on">
+                    <!-- Campo de e-mail -->
+                    <div class="campo">
+                        <span class="material-symbols-outlined">person</span>
+                        <input type="email" name="login" id="ilogin" placeholder="Seu e-mail" autocomplete="email" required>
+                        <label for="ilogin">Login</label>
+                    </div>
+
+                    <!-- Campo de senha -->
+                    <div class="campo">
+                        <span class="material-symbols-outlined">key_vertical</span>
+                        <input type="password" name="senha" id="isenha" placeholder="Sua senha" autocomplete="current-password" required>
+                        <label for="isenha">Senha</label>
+                    </div>
+
+                    <!-- Botão de envio -->
+                    <input type="submit" value="Entrar">
+
+                    <!-- Link de esqueci a senha -->
+                    <a href="esqueci.html" class="botao">Esqueci a senha 
+                        <span class="material-symbols-outlined">mail</span>
+                    </a>
+                </form>
+            </div>
+        </section>
     </main>
-    
 </body>
 </html>
